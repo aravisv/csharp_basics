@@ -1,0 +1,22 @@
+c# vs .NET
+
+c# is a programming language
+.NET is framework to develop application - supports different languages - c#, f#, VB.NET...
+
+.NET - CLR (Common Language Runtime) & Class library
+
+C# code -> Compilation -> Intermediate Language (machine independent)
+(similar to the ByteCode in Java)
+
+CLR translates IL to machine code - Just In Time (JIT) compilation
+
+Architecture of .NET app:
+Application has classes
+Class has Data and Methods
+
+Namespace - container of related classes
+Assembly (DLL or EXE) - container of namespaces
+
+when we compile an application, it will provide 1/more assemblies(dll or exe) based on 1/more namespaces
+
+    
