@@ -1,0 +1,15 @@
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/bin/Debug/net8.0/MyConsoleApp
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/bin/Debug/net8.0/MyConsoleApp.deps.json
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/bin/Debug/net8.0/MyConsoleApp.runtimeconfig.json
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/bin/Debug/net8.0/MyConsoleApp.dll
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/bin/Debug/net8.0/MyConsoleApp.pdb
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/MyConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/MyConsoleApp.AssemblyInfoInputs.cache
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/MyConsoleApp.AssemblyInfo.cs
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/MyConsoleApp.csproj.CoreCompileInputs.cache
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/MyConsoleApp.sourcelink.json
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/MyConsoleApp.dll
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/refint/MyConsoleApp.dll
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/MyConsoleApp.pdb
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/MyConsoleApp.genruntimeconfig.cache
+/Users/aravindasv/learnings/c#_basics/csharp_basics/MyConsoleApp/obj/Debug/net8.0/ref/MyConsoleApp.dll

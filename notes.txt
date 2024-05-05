@@ -19,4 +19,158 @@ Assembly (DLL or EXE) - container of namespaces
 
 when we compile an application, it will provide 1/more assemblies(dll or exe) based on 1/more namespaces
 
-    
+.NET SDK is primarily focused on development activities such as writing code, building projects, and managing dependencies
+.NET runtime is responsible for executing .NET applications and providing the necessary runtime services
+
+
+install dotnet sdk, Runtime
+
+sudo ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/
+export the paths in ~/.zshrc
+aravindasv@Aravindas-Laptop ~ % cat ~/.zshrc
+export PATH=$PATH:$HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+
+check with the commands
+
+dotnet --list-sdks
+dotnet --list-runtimes
+
+create a new console application from terminal using the command
+dotnet new console -n MyConsoleApp
+
+after that,
+dotnet build
+
+bin folder and files inside will be created
+
+dotnet run
+application runs
+
+----
+Properties
+|-AssemblyInfo.cs
+
+includes information about the assembly file that gets created when compiled
+
+References
+Assemblies that the project template creates by default that we might use
+
+App.config
+metadata about application in XML
+
+----
+using Namespace;
+
+if we want to use a class inside different namespace, we have to use the above statement
+
+using System; //basic utility classes
+using System.Collections.Generic //lists, collections ...
+using System.Linq; //work with Data
+using System.Text //text, encoding ...
+using System.Threading //multithreading application
+
+Main (case sensitive) is entry point function
+
+naming convention
+-----------------
+local variables - camelCase
+constants - PascalCase
+
+float x = 1.2 //by default c# takes it as double
+float x = 1.2f //x is a float now
+
+decimal y = 3.4m // its decimal now
+
+Non primitive types - string, array, enum, class
+
+Overflowing
+-----------
+
+byte x = 255;
+x = x + 1 // x will be zero, because of overflowing. since the max number byte can hold is 255
+
+to overcome this,
+
+checked {
+    byte x = 255;
+    x = x + 1;
+}
+
+the checked keyword will throw exception
+
+var variableName = value; //c# detects the datatype automatically
+
+explicit type conversion:
+
+target_variable_type var_name = (target_variable_type)src_var_name;
+
+Non Primitive Datatypes
+----
+
+CLR has garbage collection
+neednt worry about allocating, deallocating memory when using new operator (to create an object)
+
+static variable / method in the class can be accessed outside the class
+it cant be accessed from the object
+
+ex:
+/* Member 'Calculator.add(int, int)' cannot be accessed with an instance reference; qualify it with a type name instead */
+
+static is to be used if we want only one instance of it in memory
+ex: Main() function or currentDateTime in the class. 
+even if we create multiple objects, this function will just occupy single source of memory
+
+struct:
+similar to class, but can be used to group small number of related variables, methods
+ex:
+public struct RgbColor {
+    public int red;
+    public int green;
+    public int blue;
+}
+
+arrays:
+int[] numbers = new int[3];
+int[] numbers1 = new int[3] {1,2,3};
+or
+var numbers = new int[3];
+var numbers1 = new int[3] {1,2,3};
+
+by default, the default datatype is set, if not initialised.
+
+verbatim string need not have escape seq characters. just prepend @ before the string starts.
+
+enum:
+by default integers
+starts from zero
+
+can define the type
+
+public enum ShippingMethod : byte {
+    Regular:1,
+    Registered:2,
+    Express:3
+}
+
+const method = ShippingMethod.Express;
+
+
+It's a common convention in C# to declare enums at the namespace level, following the principle of separation of concerns.
+Enums represent a separate concern from individual methods or classes and are best defined in their own space.
+
+Enum.Parse():
+convert to different type from 1 type
+
+class - heap memory
+struct - stack
+
+variables - heap
+array - stack
+
+array2 = array1
+array2 will have the same memory as of array1
+
+if you call a function with variable name and alter it within fn, the variable value wont get changed
+but if you call it with an object (thats created using new operator), the value will get changed
+
