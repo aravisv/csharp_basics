@@ -219,3 +219,15 @@ list.Remove(list[i]);
 }
 }
 
+----
+
+string builder is for manipulation.
+there is no search option.
+If you need to search in a string that you're building using a StringBuilder,
+you need to cover it to a string first: builder.ToString().IndexOf('M').
+
+builder.Append returns the string builder instance.
+so we can chain multiple Append together
+ex: 
+builder.Append("Hello").AppendLine().Append('-',10);
+

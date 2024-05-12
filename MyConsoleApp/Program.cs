@@ -1,5 +1,6 @@
 ﻿using System;
 using HelloWorld.Math;
+using System.Text;
 
 namespace HelloWorld
 {
@@ -147,7 +148,17 @@ namespace HelloWorld
             // var timeSpan2 = timeSpan1.Add(TimeSpan.FromHours(1));
             // System.Console.WriteLine("{0} {1}", timeSpan1, timeSpan2);
 
-        }
+            // const string name = "";
+            // System.Console.WriteLine(String.IsNullOrWhiteSpace(name));
 
+            var builder = new StringBuilder();
+            builder.Append('-', 10);
+            builder.AppendLine();
+            builder.Append("Hello World");
+            builder.AppendLine();
+            builder.Append('-', 10);
+            System.Console.WriteLine(builder);
+
+        }
     }
 }
