@@ -174,3 +174,48 @@ array2 will have the same memory as of array1
 if you call a function with variable name and alter it within fn, the variable value wont get changed
 but if you call it with an object (thats created using new operator), the value will get changed
 
+//we can create string using char array like below
+var buffer = new char[10];
+for (int i = 0; i < 10; i++)
+{
+buffer[i] = ((char)('a' + random.Next(0, 26)));
+}
+System.Console.WriteLine(new string(buffer));
+
+arrays
+------
+rectangular and jagged
+rectangular - same number of columns
+jagged - diff number of columns
+
+rect: var arr = new int[3,4]
+jagged:var arr= new int[3][]
+
+lists
+-----
+generic type
+dynamic size
+
+(IEnumerable - we can use array or list)
+
+foreach (var item in list)
+{
+if (item == 2)
+{
+list.Remove(item);
+}
+}
+
+inside foreach we cannot modify the List
+Unhandled exception. System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+   at System.Collections.Generic.List`1.Enumerator.MoveNext()
+
+below works. 
+for (int i = 0; i < list.Count; i++)
+{
+if (list[i] == 2)
+{
+list.Remove(list[i]);
+}
+}
+
